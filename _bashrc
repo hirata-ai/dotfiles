@@ -1,0 +1,5 @@
+PATH="$PATH:/Users/hirataai/Downloads/sl"
+alias ls='ls -G'
+alias la='ls -G -a'
+alias ll='ls -G -lh'
+alias wnkf='nkf -w --overwrite'
