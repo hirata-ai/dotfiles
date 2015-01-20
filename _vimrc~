@@ -7,7 +7,7 @@ set shiftwidth=4
 set smartindent
 set autoindent
 syntax on
-autocmd BufNewFile *.py 0r $HOME/.vim/template/python.txt
+autocmd BufNewFile *.python 0r $HOME/.vim/template/python.txt
 
 let $LUA_DLL="/usr/local/Cellar/lua/5.2.3_1/lib/liblua.5.2.3.dyliba"
 
