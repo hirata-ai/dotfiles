@@ -19,9 +19,14 @@ call neobundle#begin(expand('~/.vim/bundle'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 
+" ディレクトリ表示してくれるやつ "
 NeoBundle 'The-NERD-tree'
+" 閉じ括弧とか自動で補完してくれるやつ "
 NeoBundle 'Townk/vim-autoclose'
+" ctrl+-(ハイフン)で選択した範囲をコメントアウトするやつ "
+NeoBundle 'tomtom/tcomment_vim' 
 
+" 文字補完してくれるやつ"
 " if_luaが有効ならneocompleteを使う"
 NeoBundle has('lua') ? 'Shougo/neocomplete' : 'Shougo/neocomplcache'
 if neobundle#is_installed('neocomplete')
