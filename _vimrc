@@ -25,6 +25,10 @@ NeoBundle 'The-NERD-tree'
 NeoBundle 'Townk/vim-autoclose'
 " ctrl+-(ハイフン)で選択した範囲をコメントアウトするやつ "
 NeoBundle 'tomtom/tcomment_vim' 
+" インデントの深さを可視化してくれるやつ "
+NeoBundle 'nathanaelkane/vim-indent-guides'
+" vimを立ち上げたときに、自動的にvim-indent-guidesをオンにする
+let g:indent_guides_enable_on_vim_startup = 1
 
 " 文字補完してくれるやつ"
 " if_luaが有効ならneocompleteを使う"
