@@ -1,0 +1,6 @@
+#PATH="$PATH:/Users/hirataai/Downloads/sl"
+alias ls='ls --color'
+alias la='ls --color -a'
+alias ll='ls --color -lh'
+alias wnkf='nkf -w --overwrite'
+#alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
