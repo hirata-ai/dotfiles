@@ -4,3 +4,4 @@ alias la='ls -G -a'
 alias ll='ls -G -lh'
 alias wnkf='nkf -w --overwrite'
 alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+PATH="$PATH:/opt/local/libexec/gnubin"
