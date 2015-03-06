@@ -1,7 +1,13 @@
 PATH="$PATH:/Users/hirataai/Downloads/sl"
-alias ls='ls -G'
-alias la='ls -G -a'
-alias ll='ls -G -lh'
+#alias ls='ls'
+alias la='ls -a'
+alias ll='ls -lh'
 alias wnkf='nkf -w --overwrite'
 alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
-PATH="$PATH:/opt/local/libexec/gnubin"
+PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH          #PATH,MANPATHにgnubinを追加
+MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH
+
+if [ -x /usr/local/bin/gdircolors ]; then
+    eval `dircolors ~/.colorrc`
+    alias ls='ls --color=auto'
+fi
