@@ -8,6 +8,8 @@ set smartindent
 set autoindent
 syntax on
 autocmd BufNewFile *.py 0r $HOME/.vim/template/python.txt
+autocmd BufNewFile *.sh 0r $HOME/.vim/template/sh.txt
+autocmd BufNewFile *.cpp 0r $HOME/.vim/template/cpp.txt
 
 let $LUA_DLL="/usr/local/Cellar/lua/5.2.3_1/lib/liblua.5.2.3.dyliba"
 
@@ -18,20 +20,22 @@ set runtimepath+=~/.vim/bundle/neobundle.vim
 call neobundle#begin(expand('~/.vim/bundle'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
-
-" ディレクトリ表示してくれるやつ "
+"
+" ファイルのコンパイル、実行 "
+NeoBundle 'SingleCompile' 
+" ディレクトリ表示 "
 NeoBundle 'The-NERD-tree'
-" 閉じ括弧とか自動で補完してくれるやつ "
+" 閉じ括弧とかの自動で補完 "
 NeoBundle 'Townk/vim-autoclose'
-" ctrl+-(ハイフン)で選択した範囲をコメントアウトするやつ "
+" ctrl+-(ハイフン)で選択した範囲をコメントアウトする "
 NeoBundle 'tomtom/tcomment_vim' 
-" インデントの深さを可視化してくれるやつ "
+" インデントの深さを可視化する"
 NeoBundle 'Yggdroot/indentLine'
 " vimを立ち上げたときに、自動的にvim-indent-guidesをオンにする
 let g:indentLine_faster = 1
 nmap <silent><Leader>i :<C-u>IndentLinesToggle<CR>
 
-" 文字補完してくれるやつ"
+" 文字補完する"
 " if_luaが有効ならneocompleteを使う"
 NeoBundle has('lua') ? 'Shougo/neocomplete' : 'Shougo/neocomplcache'
 if neobundle#is_installed('neocomplete')
