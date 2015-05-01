@@ -22,7 +22,7 @@ call neobundle#begin(expand('~/.vim/bundle'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 "
 " ファイルのコンパイル、実行 "
-NeoBundle 'SingleCompile' 
+NeoBundle 'thinca/vim-quickrun'
 " ディレクトリ表示 "
 NeoBundle 'The-NERD-tree'
 " 閉じ括弧とかの自動で補完 "

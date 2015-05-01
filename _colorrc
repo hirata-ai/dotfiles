@@ -218,6 +218,7 @@ EXEC 01;32
 
 #my file formats
 .py 00;34
+.cpp 00;34
 .txt 00;35
 *~ 00;37
 *.pyc 00;37
