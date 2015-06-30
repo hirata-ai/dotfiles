@@ -1,6 +1,8 @@
-#PATH="$PATH:/Users/hirataai/Downloads/sl"
-alias ls='ls --color'
-alias la='ls --color -a'
-alias ll='ls --color -lh'
+if [ -r ~/.colorrc ]; then
+    eval `dircolors ~/.colorrc`
+fi
+
+alias ls='ls --color=auto'
+alias la='ls -a'
+alias ll='ls -lh'
 alias wnkf='nkf -w --overwrite'
-#alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
