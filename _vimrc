@@ -21,8 +21,6 @@ call neobundle#begin(expand('~/.vim/bundle'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 "
-" ファイルのコンパイル、実行 "
-NeoBundle 'thinca/vim-quickrun'
 " ディレクトリ表示 "
 NeoBundle 'The-NERD-tree'
 " 閉じ括弧とかの自動で補完 "
@@ -34,6 +32,12 @@ NeoBundle 'Yggdroot/indentLine'
 " vimを立ち上げたときに、自動的にvim-indent-guidesをオンにする
 let g:indentLine_faster = 1
 nmap <silent><Leader>i :<C-u>IndentLinesToggle<CR>
+
+" ファイルのコンパイル、実行 "
+NeoBundle 'thinca/vim-quickrun'
+"vim-quickrun用設定
+let g:quickrun_config = get(g:, 'quickrun_config', {})
+let g:quickrun_config['g++'] = {'command':'g++','cmdopt':'-std=c++11',}
 
 " 文字補完する"
 " if_luaが有効ならneocompleteを使う"
