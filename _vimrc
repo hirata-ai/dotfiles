@@ -16,7 +16,10 @@ let $LUA_DLL="/usr/local/Cellar/lua/5.2.3_1/lib/liblua.5.2.3.dyliba"
 set nocompatible
 filetype plugin indent off
 
-set runtimepath+=~/.vim/bundle/neobundle.vim
+if has('vim_starting')
+    " 初回起動時のみruntimepathにneobundleのパスを指定する
+    set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
 call neobundle#begin(expand('~/.vim/bundle'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'

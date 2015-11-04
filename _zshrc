@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/hirataai/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -86,7 +86,16 @@ PATH="$PATH:/Users/hirataai/Downloads/sl"
 alias la='ls -a'
 alias ll='ls -lh'
 alias wnkf='nkf -w --overwrite'
-alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+
+#vim用設定
+if [ -e "/Applications/MacVim.app/Contents/MacOS/Vim" ]; then
+    alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+fi
+if [ ! -e "~/.vim/bundle/neobundle.vim" ]; then
+    git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+    git clone https://github.com/Shougo/vimproc ~/.vim/bundle/vimproc
+fi
+
 PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH          #PATH,MANPATHにgnubinを追加
 MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH
 
