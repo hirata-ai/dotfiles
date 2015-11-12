@@ -91,15 +91,17 @@ alias wnkf='nkf -w --overwrite'
 if [ -e "/Applications/MacVim.app/Contents/MacOS/Vim" ]; then
     alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 fi
-if [ ! -e "~/.vim/bundle/neobundle.vim" ]; then
-    git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
-    git clone https://github.com/Shougo/vimproc ~/.vim/bundle/vimproc
-fi
+
+# if [ -e "~/.vim/bundle/" ]; then
+#     echo "aaaaa"
+#     git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+#     git clone https://github.com/Shougo/vimproc ~/.vim/bundle/vimproc
+# fi
 
 PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH          #PATH,MANPATHにgnubinを追加
 MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH
 
-if [ -x /usr/local/bin/gdircolors ]; then
+if [ `which dircolors` ]; then
     eval `dircolors ~/.colorrc`
     alias ls='ls --color=auto'
 fi
@@ -108,3 +110,12 @@ fi
 autoload -U compinit; compinit
 # 補完で小文字でも大文字にマッチさせる
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
+#pyenv setting
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+eval "$(pyenv virtualenv-init -)"
+
+alias dirs='dirs -v'
