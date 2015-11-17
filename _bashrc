@@ -11,6 +11,7 @@ if [ -x /usr/local/bin/gdircolors ]; then
     alias ls='ls --color=auto'
 fi
 
+#お遊び
 if [ -e /Users/hirataai/Downloads/sl ]; then
     PATH="$PATH:/Users/hirataai/Downloads/sl"
 fi

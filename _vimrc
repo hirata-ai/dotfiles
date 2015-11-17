@@ -11,8 +11,6 @@ autocmd BufNewFile *.py 0r $HOME/.vim/template/python.txt
 autocmd BufNewFile *.sh 0r $HOME/.vim/template/sh.txt
 autocmd BufNewFile *.cpp 0r $HOME/.vim/template/cpp.txt
 
-let $LUA_DLL="/usr/local/Cellar/lua/5.2.3_1/lib/liblua.5.2.3.dyliba"
-
 set nocompatible
 filetype plugin indent off
 
