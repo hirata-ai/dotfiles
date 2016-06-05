@@ -1,0 +1,3 @@
+#~/.vim/rc/dein.toml に配置
+[[plugins]]
+repo = 'Shougo/dein.vim'

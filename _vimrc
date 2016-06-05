@@ -9,9 +9,9 @@ set autoindent
 " カレント行ハイライトON
 set cursorline
 " アンダーラインを引く(color terminal)
-highlight CursorLine cterm=underline ctermfg=NONE ctermbg=NONE
+" highlight CursorLine cterm=underline ctermfg=NONE ctermbg=NONE
 " アンダーラインを引く(gui)
-highlight CursorLine gui=underline guifg=NONE guibg=NONE
+" highlight CursorLine gui=underline guifg=NONE guibg=NONE
 syntax on
 autocmd BufNewFile *.py 0r $HOME/.vim/template/python.txt
 autocmd BufNewFile *.sh 0r $HOME/.vim/template/sh.txt

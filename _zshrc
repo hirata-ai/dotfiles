@@ -49,8 +49,8 @@ plugins=(git)
 
 # User configuration
 
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Applications/TeXLive/Library/texlive/2013/bin/x86_64-darwin:/Applications/TeXLive/Library/mactexaddons/bin"
-# export MANPATH="/usr/local/man:$MANPATH"
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/TeX/texbin"
+export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
 
