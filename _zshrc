@@ -81,11 +81,13 @@ source $ZSH/oh-my-zsh.sh
 # 
 #
 # my settings
-PATH="$PATH:/Users/hirataai/Downloads/sl"
+PATH="$PATH:/Users/hirataai/Downloads/sl:/home/hirata/Download/libfm/bin"
 #alias ls='ls'
 alias la='ls -a'
 alias ll='ls -lh'
 alias wnkf='nkf -w --overwrite'
+alias dirs='dirs -v'
+alias py3='pyenv activate py3.0_env'
 
 #vim用設定
 if [ -e "/Applications/MacVim.app/Contents/MacOS/Vim" ]; then
@@ -118,4 +120,4 @@ eval "$(pyenv init -)"
 
 eval "$(pyenv virtualenv-init -)"
 
-alias dirs='dirs -v'
+
